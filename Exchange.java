@@ -30,4 +30,12 @@ public class Exchange{
         }
         return result.toString();
     }
+    
+    public static int[] sdm (int[] start, int[] end, int quantity) {        
+        int[] x = new int[quantity];
+        int i = 0;
+        for (int k = 1; k < quantity k++) {
+            
+        }
+    }
 }
