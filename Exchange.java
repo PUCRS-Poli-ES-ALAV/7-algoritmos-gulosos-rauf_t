@@ -1,7 +1,15 @@
 public class Exchange{
     public static void main(String[] args) {
-        double[] test = {1.00, 0.25, 0.10, 0.05, 0.01};
-        System.out.println(bestExchange(test, 2.89));        
+        //double[] test = {1.00, 0.25, 0.10, 0.05, 0.01};
+        //System.out.println(bestExchange(test, 2.89));
+        int[] s = {2, 4, 1, 6, 4, 6, 7, 9, 9, 3, 13};
+        int[] f = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}; // 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1
+
+        int[] result = sdm(s, f, 11);
+
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i]);
+        }
     }
 
     public static String bestExchange(double[] coinsValue, double value){
@@ -33,9 +41,19 @@ public class Exchange{
     
     public static int[] sdm (int[] start, int[] end, int quantity) {        
         int[] x = new int[quantity];
-        int i = 0;
-        for (int k = 1; k < quantity k++) {
-            
+        for (int i = 0; i < x.length; i++) {
+            x[i] = 0;
         }
+        x[0] = 1;
+        int i = 0;
+        for (int k = 1; k < quantity; k++) {
+            if(start[k] > end[i]){
+                x[k] = 1;
+                i = k;
+            }
+        }
+        return x;
     }
+
+    public static int[][]
 }
