@@ -55,5 +55,17 @@ public class Exchange{
         return x;
     }
 
-    public static int[][]
+    public static int[][] rainhas(int n) {
+        if (n < 2) {
+            throw new IllegalArgumentException("Invalid value for n");
+        }        
+        int[][] result = new int[n][2];
+
+        int counter = 0;
+        for (int i = 0; i < result.length; i++) {
+            
+        }
+        
+        return null;
+    }
 }
